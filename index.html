@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Mobile specific metas
+            ============================================ -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- favicon
+            ============================================ -->
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png" />
+
+
+    <!-- font-awesome CSS
+            ============================================ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts
+            ============================================ -->
+
+
+    <!-- style CSS
+                ============================================ -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Taxi Premium</title>
+
+    <!-- JS
+              ============================================ -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('body').append('<div id="toTop">^</div>');
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 200) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                }
+            });
+
+            $('#toTop').click(function () {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 400);
+            });
+        });
+    </script>
 </head>
+
 <body>
-    
+
+
+    <!-- JS
+        ============================================ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/adaptive-menu.js"></script>
+    <script src="js/top.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
+
 </html>
