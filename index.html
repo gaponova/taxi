@@ -19,7 +19,8 @@
 
     <!-- Google Fonts
             ============================================ -->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- style CSS
                 ============================================ -->
@@ -52,6 +53,31 @@
 </head>
 
 <body>
+    <header>
+        <div class="header-bar">
+            <div class="header-bar__container">
+                <div class="header-bar__row">
+                    <div class="logo">
+                        <a href="#"><img class="logo__img" src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="header-navigation">
+                        <nav>
+                            <div class="menuToggle"><img src="img/menu-icon.png" alt="Меню"></div>
+                            <ul class="main-nav">
+                                <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link_active">HOME</a></li>
+                                <li class="main-nav__item"><a href="#" class="main-nav__link">PRICING</a></li>
+                                <li class="main-nav__item"><a href="#" class="main-nav__link">APP</a></li>
+                                <li class="main-nav__item"><a href="#" class="main-nav__link">NEWS</a></li>
+                                <li class="main-nav__item"><a href="#" class="main-nav__link">CONTACT US</a></li>
+                                <li class="main-nav__item"><a href="#" class="main-nav__link"><span class="main-nav__link_btn">BOOK ONLINE</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
 
 
     <!-- JS
@@ -62,6 +88,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script src="js/wow.js"></script>
+    <script src="js/scroll-menu.js"></script>
     <script>
         new WOW().init();
     </script>

@@ -7,8 +7,8 @@
 body {
   margin: 0;
   padding: 0;
-  font: 16px/1.3 'Lato', sans-serif;
-  background: #000;
+  font: 16px/1.3 'Poppins', sans-serif;
+  /* background: grey; */
 }
 
 img {
@@ -16,4 +16,203 @@ img {
   height: auto;
 }
 
+.container {
+  position: relative;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  color: #1B202D;
+  padding: 15px 30px;
+  border-radius: 0px 0px 0px 0px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
 /*----------Стили для header----------*/
+
+header {
+  /* background-image: url(../img/avada-taxi-homepage-hero.webp); */
+  background-image: linear-gradient(180deg, #000000 0%, rgba(255, 255, 255, 0) 100%), url(../img/avada-taxi-homepage-hero.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+}
+
+.header-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.bar-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  animation: fixedMenu 1s forwards;
+  transition: 0.5s;
+}
+
+@keyframes fixedMenu {
+  0% {
+    opacity: 0;
+  }
+
+  /* 50% {
+   height: 80px;
+  } */
+
+  100% {
+    opacity: 70px;
+  }
+}
+
+.header-bar__container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+
+.header-bar__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo__img {
+  max-height: 65px;
+}
+
+.main-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.main-nav__link {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: #cfcfcf;
+  padding: 35px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.main-nav__link_active,
+.main-nav__link:hover {
+  color: #feba12;
+}
+
+.main-nav__link_btn {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: normal;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: all .2s;
+  background: #feba12;
+  color: #000000;
+  padding: 9px 20px;
+  line-height: 14px;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.main-nav__link_btn:hover {
+  background: rgb(254 218 18);
+  transition: 0.3s;
+}
+
+
+/*----------Кнопка Наверх----------*/
+
+#toTop {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  background: #FFDA0C;
+  font-family: "Work Sans", Sans-serif;
+  font-size: 26px;
+  line-height: 10px;
+  text-align: center;
+  color: #1B202D;
+  border: 1px solid #1B202D;
+  border-radius: 5px;
+  padding: 5px;
+  z-index: 1000;
+}
+
+/*Кнопка для адаптивного меню*/
+
+.menuToggle {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: red;
+  z-index: 1000;
+}
+
+/*----------Адаптив----------*/
+
+
+@media screen and (min-width: 993px) {
+
+  /* .header-menu {
+    display: flex !important;
+  } */
+}
+
+
+@media only screen and (max-width: 992px) {
+
+
+
+  .menuToggle {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    background-color: rgba(2%, 5%, 14%, 1);
+    padding-bottom: 20px;
+  }
+
+  .main-nav__item {
+    display: block;
+    text-align: center;
+  }
+}
