@@ -157,6 +157,9 @@ header {
   margin: 0 auto;
   position: relative;
   top: 35%;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 10px 23px 0px;
+  margin-bottom: 20px;
   /* width: 1170px;
   position: absolute;
   top: 50%;
@@ -308,7 +311,192 @@ header {
   margin-top: 15px;
 }
 
-.btn {}
+/*----------Стили для секции price----------*/
+
+.price {
+  padding-top: 11%;
+}
+
+.price__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.price-item {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(222 225 228);
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 10px 23px 0px;
+  padding: 40px 40px 20px;
+}
+
+.fa-taxi,
+.fa-bus,
+.fa-subway {
+  font-size: 130px;
+  color: #feba12;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.price__title {
+  display: block;
+  font-family: "Poppins";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.price__passengers {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  font-style: normal;
+  color: #bcbcbc;
+  margin-bottom: 20px;
+}
+
+.price__info {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #747474;
+  margin-bottom: 30px;
+}
+
+.price__ride {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.price__km {
+  font-family: "Roboto";
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: 700;
+  font-style: normal;
+  color: #feba12;
+}
+
+.price__km span {
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: normal;
+  color: #feba12;
+}
+
+/*----------Стили для секции stats----------*/
+
+.stats {
+  background-image: url(../img/stats-background.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 30px;
+}
+
+.stats__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stats-box {
+  width: 30%;
+  text-align: center;
+  padding: 60px 0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stats-box__quant {
+  display: block;
+  font-family: "Poppins";
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+
+.stats-box__info {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+
+/*----------Стили для секции app----------*/
+
+.app {
+  background-image: url(../img/app-background.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 30px;
+}
+
+.app__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.app-box {
+  width: 50%;
+}
+
+.app-box_info {
+  width: 48%;
+  padding-right: 60px;
+}
+
+.app-box__title {
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+}
+
+.app-box__desc {
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.app-action {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-action__btn {
+  max-width: 46%;
+  margin-right: 20px;
+}
 
 
 /*----------Кнопка Наверх----------*/
