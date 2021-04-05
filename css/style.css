@@ -422,6 +422,7 @@ header {
   width: 30%;
   text-align: center;
   padding: 60px 0;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -451,7 +452,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 30px;
+  padding: 60px 30px 0;
 }
 
 .app__row {
@@ -467,6 +468,10 @@ header {
 .app-box_info {
   width: 48%;
   padding-right: 60px;
+}
+
+.app-box__img {
+  display: block;
 }
 
 .app-box__title {
@@ -496,6 +501,163 @@ header {
 .app-action__btn {
   max-width: 46%;
   margin-right: 20px;
+}
+
+/*----------Стили для секции recent----------*/
+
+.recent {
+  padding: 80px 15px;
+  text-align: center;
+}
+
+.recent__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.recent__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px;
+  margin-bottom: 60px;
+}
+
+.recent-article {
+  width: calc(49% - 30px);
+  margin: 0 15px;
+  border: 1px solid rgb(222 225 228);
+  box-shadow: rgb(0 0 0 / 5%) 0px 10px 23px 0px;
+  border-radius: 8px;
+}
+
+.article__link {}
+
+.article__img {
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.recent-article__desc {
+  padding: 30px 40px 20px 40px;
+}
+
+.article__title {
+  display: block;
+  font-family: "Poppins";
+  font-size: 26px;
+  line-height: 39px;
+  font-weight: 500;
+  font-style: normal;
+  color: #333;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-bottom: 7px;
+}
+
+.article__title:hover {
+  color: #feba12;
+}
+
+.article-info {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #747474;
+  margin-bottom: 30px;
+}
+
+.article-info__author {
+  color: #747474;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.article-info__date {
+  color: #747474;
+}
+
+.article-info__cat {
+  color: #747474;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.article-info__author:hover,
+.article-info__date:hover,
+.article-info__cat:hover {
+  color: #feba12;
+  transition: 0.3s;
+}
+
+.recent-article__text {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #747474;
+}
+
+/*----------Стили для секции footer----------*/
+
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/footer.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 6%;
+}
+
+.board {
+  margin-bottom: 100px;
+}
+
+.board__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.online-save_footer,
+.price-item_footer {
+  width: 22%;
+  border: none;
+}
+
+.separator {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #feba12;
+}
+
+.separator-icon {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  text-align: center;
+  background-color: #000000;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #feba12;
+  border-radius: 50%;
+  transform: translateX(-40px);
+}
+
+.fa-taxi_separator {
+  margin: 0;
+  font-size: 35px;
+  line-height: 80px;
 }
 
 
