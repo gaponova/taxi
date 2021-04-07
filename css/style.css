@@ -797,6 +797,29 @@ footer {
 /*----------Адаптив----------*/
 
 
+@media only screen and (max-width: 1400px) {
+
+  header {
+    height: auto;
+  }
+
+  .header-info {
+    padding-top: 12%;
+  }
+
+  .price {
+    padding-top: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .app-action__btn {
+    max-width: 44%;
+  }
+
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -846,10 +869,6 @@ footer {
   .main-nav__link:hover {
     background: #feba12;
     color: #000000;
-  }
-
-  .app-action__btn {
-    max-width: 44%;
   }
 
   .online-save_footer,
