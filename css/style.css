@@ -6,7 +6,6 @@
 
 body {
   margin: 0;
-  padding: 0;
   font: 16px/1.3 "Poppins", sans-serif;
   /* background: grey; */
 }
@@ -51,24 +50,25 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 85vh;
-  padding: 0 15px;
+  padding: 10px;
 }
 
 .header-bar {
   position: absolute;
   left: 0;
   right: 0;
-  padding: 20px 0;
+  padding: 10px 10px;
   z-index: 1;
   transition: 0.5s;
 }
 
 .bar-fixed {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 999;
   animation: fixedMenu 1s forwards;
   transition: 0.5s;
@@ -119,7 +119,6 @@ header {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 14px;
-  letter-spacing: 1px;
   font-style: normal;
   color: #cfcfcf;
   padding: 35px 20px;
@@ -197,8 +196,6 @@ header {
   color: #ffffff;
 }
 
-.online-booking {}
-
 .online-booking__container {
   display: flex;
   flex-wrap: wrap;
@@ -275,8 +272,6 @@ header {
   width: 48%;
 }
 
-.form-item {}
-
 .online-form__label {
   display: block;
   font-family: "Roboto";
@@ -314,7 +309,7 @@ header {
 /*----------Стили для секции price----------*/
 
 .price {
-  padding-top: 11%;
+  padding: 250px 10px 100px;
 }
 
 .price__row {
@@ -350,7 +345,7 @@ header {
   line-height: 30px;
   font-weight: 400;
   font-style: normal;
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 
@@ -380,7 +375,7 @@ header {
   line-height: 24px;
   font-weight: 700;
   font-style: normal;
-  color: #333;
+  color: #6b6b6b;
   margin-bottom: 20px;
 }
 
@@ -409,7 +404,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 30px;
+  padding: 60px 10px;
 }
 
 .stats__row {
@@ -452,7 +447,7 @@ header {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 60px 30px 0;
+  padding: 60px 10px 0;
 }
 
 .app__row {
@@ -506,7 +501,7 @@ header {
 /*----------Стили для секции recent----------*/
 
 .recent {
-  padding: 80px 15px;
+  padding: 80px 10px;
   text-align: center;
 }
 
@@ -536,8 +531,6 @@ header {
   box-shadow: rgb(0 0 0 / 5%) 0px 10px 23px 0px;
   border-radius: 8px;
 }
-
-.article__link {}
 
 .article__img {
   display: block;
@@ -615,10 +608,13 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 6%;
+  padding: 7% 10px;
+  ;
 }
 
 .board {
+  max-width: 1700px;
+  margin: 0 auto;
   margin-bottom: 100px;
 }
 
@@ -639,6 +635,7 @@ footer {
   position: relative;
   width: 100%;
   border-bottom: 1px solid #feba12;
+  margin-bottom: 120px;
 }
 
 .separator-icon {
@@ -660,27 +657,129 @@ footer {
   line-height: 80px;
 }
 
+/*----------Стили для copyright----------*/
+
+.footer-info {
+  text-align: center;
+}
+
+.footer-logo {
+  /* margin-bottom: 20px; */
+}
+
+.social {
+  position: relative;
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.facebook,
+.instagram,
+.twitter {
+  position: relative;
+  margin: 12px;
+  transition: all .3s ease;
+}
+
+.facebook:hover .tooltip-box,
+.twitter:hover .tooltip-box,
+.instagram:hover .tooltip-box {
+  visibility: visible;
+  opacity: 1;
+}
+
+.fa-facebook,
+.fa-twitter-square,
+.fa-instagram {
+  font-size: 16px;
+  line-height: 16px;
+  color: #bebdbd;
+}
+
+.tooltip {
+  position: relative;
+}
+
+.tooltip-box {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -52px;
+  left: -25px;
+  /* width: 80px; */
+  background: rgb(20%, 20%, 20%, 1);
+  padding: 0 5px 3px;
+  border-radius: 2px;
+  transition: all .3s ease;
+}
+
+.tooltip-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  right: 45%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: rgb(20%, 20%, 20%, 1) transparent transparent transparent;
+}
+
+.tooltip-box_twitter {
+  left: -12px;
+}
+
+.tooltip-box__name {
+  font-size: 11px;
+  color: #bebdbd;
+}
+
+.copyright {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #747474;
+}
+
+.copyright__info {
+  margin: 5px;
+}
+
+.copyright__link {
+  color: #fff;
+  margin: 5px;
+  text-decoration: none;
+}
+
 
 /*----------Кнопка Наверх----------*/
 
 #toTop {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 35px;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 0;
+  right: 75px;
   cursor: pointer;
   display: none;
-  background: #FFDA0C;
-  font-family: "Work Sans", Sans-serif;
-  font-size: 26px;
-  line-height: 10px;
+  background: #333;
+  font-family: "Roboto", Sans-serif;
+  font-size: 22px;
+  line-height: 35px;
   text-align: center;
-  color: #1B202D;
-  border: 1px solid #1B202D;
-  border-radius: 5px;
-  padding: 5px;
+  color: #ffffff;
+  border-radius: 4px 4px 0 0;
   z-index: 1000;
+  transition: 0.3s;
+}
+
+#toTop:hover {
+  background: #feba12;
 }
 
 /*Кнопка для адаптивного меню*/
@@ -692,24 +791,26 @@ footer {
   right: 20px;
   transform: translateY(-50%);
   cursor: pointer;
-  background: red;
   z-index: 1000;
 }
 
 /*----------Адаптив----------*/
 
 
-@media screen and (min-width: 993px) {
 
-  /* .header-menu {
-    display: flex !important;
-  } */
+@media only screen and (max-width: 1024px) {
+
+  .header-info {
+    top: 25%;
+  }
+
+  .price {
+    padding-top: 100px;
+  }
+
 }
 
-
 @media only screen and (max-width: 992px) {
-
-
 
   .menuToggle {
     display: block;
@@ -718,10 +819,10 @@ footer {
   .main-nav {
     display: none;
     position: absolute;
-    top: 48px;
+    top: 88px;
     left: 0;
     right: 0;
-    background-color: rgba(2%, 5%, 14%, 1);
+    background-color: rgba(0, 0, 0, 0.8);
     padding-bottom: 20px;
   }
 
@@ -729,4 +830,107 @@ footer {
     display: block;
     text-align: center;
   }
+
+  .main-nav__link {
+    display: block;
+    font-family: "Poppins";
+    font-size: 12px;
+    line-height: 35px;
+    font-weight: 600;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    padding: 2px;
+  }
+
+  .main-nav__link_active,
+  .main-nav__link:hover {
+    background: #feba12;
+    color: #000000;
+  }
+
+  .app-action__btn {
+    max-width: 44%;
+  }
+
+  .online-save_footer,
+  .price-item_footer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  header {
+    height: auto;
+  }
+
+  .header-info {
+    padding-top: 120px;
+  }
+
+  .premium-slogan__title {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+
+  .premium-slogan__subtitle {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .online-save {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .online-form {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .price-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .app-box {
+    width: 100%;
+    padding: 0;
+  }
+
+  .app-action {
+    justify-content: space-around;
+  }
+
+  .app-box_info {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+  .online-form {
+    padding: 20px;
+  }
+
+  .online-form__box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .stats-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .recent-article {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .recent-article:last-child {
+    margin-bottom: 0;
+  }
+
 }
