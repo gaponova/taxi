@@ -345,7 +345,7 @@ header {
   line-height: 30px;
   font-weight: 400;
   font-style: normal;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 5px;
 }
 
@@ -631,6 +631,10 @@ footer {
   border: none;
 }
 
+.price-item_footer .price__title {
+  color: #fff;
+}
+
 .separator {
   position: relative;
   width: 100%;
@@ -759,7 +763,7 @@ footer {
 
 /*----------Стили для страницы pricing----------*/
 
-/*----------Стили для блока pricing----------*/
+/*----------Стили для секции pricing----------*/
 
 .header-pricing {
   height: auto;
@@ -767,8 +771,7 @@ footer {
 
 .pricing {
   text-align: center;
-  padding-top: 110px;
-  padding-bottom: 40px;
+  padding: 110px 10px 40px;
 }
 
 .pricing__title {
@@ -788,6 +791,38 @@ footer {
   font-weight: 400;
   font-style: normal;
   color: #ffffff;
+}
+
+/*----------Стили для секции cost----------*/
+
+.cost {
+  text-align: center;
+  padding: 85px 10px;
+}
+
+.cost__info {
+  max-width: 85%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.cost__title {
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  margin: 30px 0 30px;
+}
+
+.cost__desc {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #747474;
 }
 
 /*----------Кнопка Наверх----------*/
