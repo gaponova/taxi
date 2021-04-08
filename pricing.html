@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Mobile specific metas
+            ============================================ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- favicon
+            ============================================ -->
+  <link rel="shortcut icon" type="images/png" href="images/favicon.png" />
+
+
+  <!-- font-awesome CSS
+            ============================================ -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Google Fonts
+            ============================================ -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- style CSS
+                ============================================ -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Taxi Premium</title>
+
+  <!-- JS
+              ============================================ -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('body').append('<div id="toTop">^</div>');
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('#toTop').fadeIn();
+        } else {
+          $('#toTop').fadeOut();
+        }
+      });
+
+      $('#toTop').click(function () {
+        $('body, html').animate({
+          scrollTop: 0
+        }, 400);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header class="header-pricing">
+    <div class="header-bar">
+      <div class="header-bar__container">
+        <div class="header-bar__row">
+          <div class="logo">
+            <a href="#"><img class="logo__img" src="img/logo.png" alt="logo"></a>
+          </div>
+          <div class="header-navigation">
+            <nav>
+              <div class="menuToggle"><img src="img/menu-icon.png" alt="Меню"></div>
+              <ul class="main-nav">
+                <li class="main-nav__item"><a href="index.html" class="main-nav__link">HOME</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link_active">PRICING</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">APP</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">NEWS</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link">CONTACT US</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link"><span class="main-nav__link_btn">BOOK ONLINE</span></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing container">
+      <h1 class="pricing__title">Pricing</h1>
+      <h2 class="pricing__subtitle">Rates & Types of Service</h2>
+    </div>
+  </header>
+
+  <footer>
+    <section class="board">
+      <div class="board__row">
+        <div class="online-save online-save_footer">
+          <span class="online-save__book">Book online now &</span>
+          <span class="online-save__save">SAVE</span>
+          <span class="online-save__per">10%</span>
+          <span class="online-save__on">On Your Ride</span>
+        </div>
+        <div class="price-item price-item_footer">
+          <i class="fa fa-taxi" aria-hidden="true"></i>
+          <span class="price__title">Standard Cab</span>
+          <span class="price__passengers">1-3 PASSENGERS</span>
+          <p class="price__info">Our standard cab service will pick you up from your desired location with up to 2 additional riders, and deliver you safely to your target destination.</p>
+          <span class="price__ride">RIDES COST</span>
+          <span class="price__km">$1<span>/km</span></span>
+        </div>
+        <div class="price-item price-item_footer">
+          <i class="fa fa-bus" aria-hidden="true"></i>
+          <span class="price__title">Minibus</span>
+          <span class="price__passengers">1-8 PASSENGERS</span>
+          <p class="price__info">Our standard cab service will pick you up from your desired location with up to 2 additional riders, and deliver you safely to your target destination.</p>
+          <span class="price__ride">RIDES COST</span>
+          <span class="price__km">$2<span>/km</span></span>
+        </div>
+        <div class="price-item price-item_footer">
+          <i class="fa fa-subway" aria-hidden="true"></i>
+          <span class="price__title">Executive</span>
+          <span class="price__passengers">1-2 PASSENGERS</span>
+          <p class="price__info">Our standard cab service will pick you up from your desired location with up to 2 additional riders, and deliver you safely to your target destination.</p>
+          <span class="price__ride">RIDES COST</span>
+          <span class="price__km">$5<span>/km</span></span>
+        </div>
+      </div>
+    </section>
+    <div class="separator">
+      <div class="separator-icon">
+        <i class="fa fa-taxi fa-taxi_separator" aria-hidden="true"></i>
+      </div>
+    </div>
+    <section class="footer-info">
+      <div class="logo footer-logo">
+        <a href="#"><img class="logo__img" src="img/logo.png" alt="logo"></a>
+      </div>
+      <div class="social">
+        <div class="facebook">
+          <a href="https://facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <div class="tooltip">
+            <div class="tooltip-box">
+              <span class="tooltip-box__name">Facebook</span>
+            </div>
+          </div>
+        </div>
+        <div class="twitter">
+          <a href="https://twitter.com/"><i class="fa fa-twitter-square" aria-hidden="true"></i></i></a>
+          <div class="tooltip">
+            <div class="tooltip-box tooltip-box_twitter">
+              <span class="tooltip-box__name">Twitter</span>
+            </div>
+          </div>
+        </div>
+        <div class="instagram">
+          <a href="https://instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <div class="tooltip">
+            <div class="tooltip-box">
+              <span class="tooltip-box__name">Instagram</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span class="copyright__info">&copy;Copyright 2012 - 202</span>
+        <span>|</span>
+        <span class="copyright__info">Avada Theme by</span>
+        <a class="copyright__link" href="#">ThemeFusion</a>
+        <span>|</span>
+        <span class="copyright__info">All Rights Reserved | Powered by</span>
+        <a class="copyright__link" href="#">Wordpress</a>
+      </div>
+    </section>
+  </footer>
+
+  <!-- JS
+        ============================================ -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/adaptive-menu.js"></script>
+  <script src="js/top.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script> -->
+  <script src="js/wow.js"></script>
+  <script src="js/scroll-menu.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
