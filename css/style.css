@@ -801,7 +801,7 @@ footer {
 }
 
 .cost__info {
-  max-width: 85%;
+  max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 80px;
 }
@@ -824,6 +824,104 @@ footer {
   font-style: normal;
   color: #747474;
 }
+
+
+/*----------Стили для секции happy----------*/
+
+.happy {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0%, rgba(255, 255, 255, 0) 100%), url(../img/happy-background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 100px 10px;
+  border-top: 8px solid #feba12;
+}
+
+.happy-info {
+  font-family: "Poppins";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}
+
+.happy-number {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 10px 23px 0px;
+}
+
+.happy-number__passengeer {
+  font-family: "Poppins";
+  font-size: 100px;
+  line-height: 150px;
+  font-weight: 700;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+}
+
+/*----------Стили для секции about----------*/
+
+.about {
+  text-align: center;
+  padding: 85px 10px 50px;
+}
+
+.about__title {
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  margin: 30px 0 50px;
+}
+
+.about__pic {
+  box-shadow: rgb(0 0 0 / 20%) 0px 10px 23px 0px;
+  margin-bottom: 70px;
+}
+
+.about__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-box {
+  width: 45%;
+  padding: 0 40px 60px;
+  margin-bottom: 20px;
+}
+
+.about-box__icon {
+  font-size: 60px;
+  color: #feba12;
+}
+
+.about-box__title {
+  font-family: "Poppins";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+
+.about-box__desc {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #747474;
+}
+
+
 
 /*----------Кнопка Наверх----------*/
 
@@ -992,6 +1090,10 @@ footer {
 
   .app-box_info {
     margin-bottom: 20px;
+  }
+
+  .about-box {
+    width: 100%;
   }
 }
 
