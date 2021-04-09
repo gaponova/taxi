@@ -667,10 +667,6 @@ footer {
   text-align: center;
 }
 
-.footer-logo {
-  /* margin-bottom: 20px; */
-}
-
 .social {
   position: relative;
   display: flex;
@@ -920,6 +916,12 @@ footer {
   font-style: normal;
   color: #747474;
 }
+
+
+/*----------Стили для страницы app----------*/
+
+/*----------Стили для секции get----------*/
+
 
 
 
