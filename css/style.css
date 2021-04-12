@@ -922,7 +922,126 @@ footer {
 
 /*----------Стили для секции get----------*/
 
+.header-get {
+  height: auto;
+  background-image: linear-gradient(13deg, rgba(254, 186, 18, 0.78) 19%, rgba(254, 186, 18, 0) 86%), url(../img/avada-taxi-homepage-hero.webp);
+  padding-bottom: 0;
+}
 
+.get {
+  padding: 110px 10px 0;
+}
+
+.get__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.get-box {
+  width: 50%;
+}
+
+.get-box-pic {}
+
+.get-box-info {
+  padding-top: 80px;
+}
+
+.get-box__pic {
+  display: block;
+}
+
+.get-box__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 65px;
+  line-height: 65px;
+  font-weight: 600;
+  font-style: normal;
+  color: #feba12;
+  margin-bottom: 20px;
+}
+
+.get-box__subtitle {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 60px;
+}
+
+.get-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 40px;
+}
+
+.get-list__item {
+  position: relative;
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 37px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  padding: 5px 0 5px 40px;
+}
+
+.get-list__item::before {
+  font-family: 'FontAwesome';
+  content: "\f05d ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  color: #feba12;
+}
+
+.app-box_get {
+  width: 100%;
+}
+
+.get-box__desc {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+/*----------Стили для секции feature----------*/
+
+.feature {
+  text-align: center;
+  padding: 90px 10px;
+}
+
+.feature__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.feature__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feature-box {
+  width: 22%;
+}
 
 
 /*----------Кнопка Наверх----------*/
