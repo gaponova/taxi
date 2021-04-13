@@ -1090,7 +1090,7 @@ footer {
 
 .what-say__img {
   width: 90px;
-  height: 90px;
+  height: auto;
 }
 
 .what-info {
@@ -1123,6 +1123,66 @@ footer {
   font-style: normal;
   color: #feba12;
 }
+
+/*----------Стили для секции want----------*/
+
+.want {
+  background-image: url(../img/want-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 90px 10px;
+}
+
+.what-info {}
+
+.want-info__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.want-info__subtitle {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.want-actions {}
+
+.action-btn {
+  display: inline-block;
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  padding: 17px 40px;
+  margin: 5px;
+}
+
+.fa {}
+
+.fa-calendar {}
+
+.action-btn__icon {
+  margin-left: 5px;
+}
+
+.fa-phone {}
 
 
 /*----------Кнопка Наверх----------*/
@@ -1197,6 +1257,63 @@ footer {
 
   .price {
     padding-top: 100px;
+  }
+
+  .get-box-info {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .app-box_info {
+    padding-right: 0;
+  }
+
+  .get-box__subtitle {
+    margin-bottom: 0;
+  }
+
+  .get-list {
+    display: none;
+  }
+
+  .get-box__desc {
+    margin-bottom: 50px;
+  }
+
+  .app-action {
+    display: block;
+  }
+
+  .app-action__btn {
+    display: block;
+    width: 300px;
+    margin: 0 auto 20px;
+  }
+
+  .get-box-pic {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .get-box__pic {
+    display: inline-block;
+    margin-left: 30px;
+  }
+
+  .what-box {
+    width: calc(70% - 30px);
+    text-align: left;
+    margin: 0 auto 40px;
+  }
+
+  .what-info {
+    width: 80%;
+  }
+
+  .want -info {
+    padding-bottom: 0;
   }
 
 }
@@ -1296,6 +1413,20 @@ footer {
 
   .about-box {
     width: 100%;
+  }
+
+  .what-say {
+    display: block;
+    text-align: center;
+  }
+
+  .what-say-img,
+  .what-info {
+    width: 100%
+  }
+
+  .what-say__img {
+    width: auto;
   }
 }
 
