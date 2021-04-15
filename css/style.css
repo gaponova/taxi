@@ -1174,15 +1174,21 @@ footer {
   margin: 5px;
 }
 
-.fa {}
-
-.fa-calendar {}
-
 .action-btn__icon {
   margin-left: 5px;
 }
 
-.fa-phone {}
+
+/*----------Стили для страницы news---------*/
+
+.header-news {
+  height: 10vh;
+  background: #000;
+}
+
+
+/*----------Стили для секции download----------*/
+
 
 
 /*----------Кнопка Наверх----------*/
