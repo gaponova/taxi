@@ -1189,6 +1189,66 @@ footer {
 
 /*----------Стили для секции download----------*/
 
+.download {
+  background-image: linear-gradient(13deg, rgba(254, 186, 18, 0.78) 19%, rgba(254, 186, 18, 0) 86%), url(../img/app-background.webp);
+  padding: 11px 10px;
+}
+
+.download__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-item {}
+
+.download-item__action {
+  font-family: "Poppins";
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffffff;
+}
+
+
+
+.download-btn {
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  font-style: normal;
+  background: #000;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.download-btn__icon {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+
+
+.recent-other {
+  padding-top: 0;
+  padding-bottom: 120px;
+}
+
+.other__row {
+  max-width: 1550px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+
+
+.other-article {
+  width: calc(33% - 30px);
+}
 
 
 /*----------Кнопка Наверх----------*/
