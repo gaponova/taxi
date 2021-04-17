@@ -1201,8 +1201,6 @@ footer {
   align-items: center;
 }
 
-.download-item {}
-
 .download-item__action {
   font-family: "Poppins";
   font-size: 21px;
@@ -1241,6 +1239,7 @@ footer {
   max-width: 1550px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
@@ -1319,6 +1318,10 @@ footer {
 
   .header-info {
     top: 25%;
+  }
+
+  .header-news {
+    padding-top: 0;
   }
 
   .price {
@@ -1426,6 +1429,10 @@ footer {
   .price-item_footer {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .other-article {
+    width: calc(50% - 30px);
   }
 }
 
