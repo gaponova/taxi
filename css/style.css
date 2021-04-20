@@ -729,7 +729,11 @@ footer {
 }
 
 .tooltip-box_twitter {
-  left: -12px;
+  left: -17px;
+}
+
+.tooltip-box_twitter::after {
+  right: 38%;
 }
 
 .tooltip-box__name {
@@ -1243,11 +1247,178 @@ footer {
   margin: 0 auto;
 }
 
-
-
 .other-article {
   width: calc(33% - 30px);
 }
+
+
+/*----------Стили для страницы contact----------*/
+
+/*----------Стили для секции contact----------*/
+
+.contact {
+  padding: 80px 10px;
+}
+
+.contact__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.contact-box {
+  margin: 15px;
+}
+
+.contact-talk {
+  width: calc(75% - 30px);
+  padding: 50px;
+  border: 1px solid rgb(222 225 228);
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 10px 23px 0px;
+}
+
+.contact-talk__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+}
+
+.contact-talk__subtitle {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #747474;
+}
+
+.conact-form {
+  padding: 0 40px 0 15px;
+}
+
+.conact-form__field {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 60px;
+  font-family: Roboto;
+  font-size: 13px;
+  color: #c9c7c7;
+  margin: 15px;
+  padding: 0 15px;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+}
+
+.conact-form__message {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 13px;
+  color: #c9c7c7;
+  margin: 15px 15px 25px;
+  padding: 15px;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+}
+
+.conact-form__field::placeholder,
+.conact-form__message::placeholder {
+  color: #c9cbd0;
+}
+
+.contact-btn {
+  margin-left: 15px;
+}
+
+.contact-connect {
+  width: calc(25% - 30px);
+  padding: 30px 15px;
+}
+
+.contact-connect__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.contact-connect__subtitle {
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #747474;
+  margin-bottom: 10px;
+}
+
+.social_contact {
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.facebook_contact,
+.instagram_contact,
+.twitter_contact {
+  margin: 5px 20px 5px 0;
+}
+
+.connect-box {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/footer.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.connect-box:last-child {
+  margin-bottom: 0;
+}
+
+.connect-box__img {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.connect-box__title {
+  font-family: "Poppins";
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.connect-box__info {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
 
 
 /*----------Кнопка Наверх----------*/
@@ -1501,6 +1672,23 @@ footer {
   .what-say__img {
     width: auto;
   }
+
+  .contact__row {
+    text-align: center;
+  }
+
+  .contact-talk {
+    width: 100%;
+  }
+
+  .contact-connect {
+    width: 100%;
+  }
+
+  .social {
+    width: 100px;
+  }
+
 }
 
 @media only screen and (max-width: 576px) {
