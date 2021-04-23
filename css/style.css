@@ -259,7 +259,7 @@ header {
   background: #fff;
   color: #747474;
   border-radius: 0 10px 10px 0;
-  padding: 60px 40px 0 40px;
+  padding: 60px 40px 20px 40px;
 }
 
 .online-form__container {
@@ -1080,6 +1080,7 @@ footer {
 .what-box {
   width: calc(50% - 30px);
   margin: 0 15px;
+  text-align: left;
 }
 
 .what-say {
@@ -1099,6 +1100,7 @@ footer {
 
 .what-info {
   width: 85%;
+  padding-left: 20px;
 }
 
 .what-info__testimonial {
@@ -1419,6 +1421,89 @@ footer {
   color: #ffffff;
 }
 
+/*----------Стили для страницы booking.html----------*/
+
+/*----------Стили для секции booking----------*/
+
+.booking__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.booking-box {
+  margin: 0 15px;
+  width: calc(69% - 30px);
+  padding: 50px;
+  border: 1px solid rgb(222 225 228);
+  border-radius: 8px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 10px 23px 0px;
+}
+
+.booking-box__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.online-form_booking {
+  padding: 0;
+  width: auto;
+}
+
+.online-save_booking {
+  margin: 0 15px;
+  width: calc(30% - 30px);
+  border-radius: 10px;
+}
+
+/*----------Стили для секции say----------*/
+
+.say {
+  padding: 80px 0 20px;
+}
+
+.say__title {
+  margin: 0;
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 75px;
+  font-weight: 700;
+  font-style: normal;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.say__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.say-box {
+  margin: 20px;
+  width: calc(33% - 40px);
+  background: url(../img/what-bg.webp);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  padding: 50px 40px;
+  border-radius: 6px;
+}
+
+.what-say_mod {
+  display: block;
+}
+
+.what-say_mod>.what-say-img,
+.what-say_mod>.what-info {
+  width: 100%
+}
 
 
 /*----------Кнопка Наверх----------*/
@@ -1605,6 +1690,32 @@ footer {
   .other-article {
     width: calc(50% - 30px);
   }
+
+  .booking-box {
+    width: 100%;
+  }
+
+  .online-form_booking {
+    width: 100%;
+  }
+
+  .online-form__container {
+    display: block;
+  }
+
+  .online-form__box {
+    width: 100%;
+  }
+
+  .online-save_booking {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .say-box {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -1640,6 +1751,14 @@ footer {
   .price-item {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .download__row {
+    justify-content: center;
+  }
+
+  .download-btn {
+    display: block;
   }
 
   .app-box {

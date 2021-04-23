@@ -65,11 +65,11 @@
               <div class="menuToggle"><img src="img/menu-icon.png" alt="Меню"></div>
               <ul class="main-nav">
                 <li class="main-nav__item"><a href="index.html" class="main-nav__link">HOME</a></li>
-                <li class="main-nav__item"><a href="#" class="main-nav__link main-nav__link_active">PRICING</a></li>
+                <li class="main-nav__item"><a href="pricing.html" class="main-nav__link">PRICING</a></li>
                 <li class="main-nav__item"><a href="app.html" class="main-nav__link">APP</a></li>
                 <li class="main-nav__item"><a href="news.html" class="main-nav__link">NEWS</a></li>
-                <li class="main-nav__item"><a href="contact.html" class="main-nav__link">CONTACT US</a></li>
-                <li class="main-nav__item"><a href="booking.html" class="main-nav__link"><span class="main-nav__link_btn">BOOK ONLINE</span></a></li>
+                <li class="main-nav__item"><a href="contact.html" class="main-nav__link main-nav__link_active">CONTACT US</a></li>
+                <li class="main-nav__item"><a href="#" class="main-nav__link"><span class="main-nav__link_btn">BOOK ONLINE</span></a></li>
               </ul>
             </nav>
           </div>
@@ -77,42 +77,56 @@
       </div>
     </div>
     <div class="pricing container">
-      <h1 class="pricing__title">Pricing</h1>
-      <h2 class="pricing__subtitle">Rates & Types of Service</h2>
+      <h1 class="pricing__title">Book Online</h1>
+      <h2 class="pricing__subtitle">Save 10% When You Book Online</h2>
     </div>
   </header>
-  <section class="cost">
-    <div class="cost__info">
-      <h2 class="cost__title">What does a ride cost?</h2>
-      <p class="cost__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta pharetra finibus. Nunc nisi arcu, convallis quis dapibus vulputate, maximus eget lacus. Aenean ornare diam eu justo sodales, a feugiat est condimentum. Praesent congue, nunc ut auctor consectetur, elit urna dapibus sapien, a eleifend nisl lacus et libero.</p>
-    </div>
+
+  <section class="contact">
     <div class="container">
-      <div class="container">
-        <div class="price__row">
-          <div class="price-item">
-            <i class="fa fa-taxi" aria-hidden="true"></i>
-            <span class="price__title">Standard Cab</span>
-            <span class="price__passengers">1-3 PASSENGERS</span>
-            <p class="price__info">Our standard cab service will pick you up from your desired location with up to 2 additional riders, and deliver you safely to your target destination.</p>
-            <span class="price__ride">RIDES COST</span>
-            <span class="price__km">$1<span>/km</span></span>
-          </div>
-          <div class="price-item">
-            <i class="fa fa-bus" aria-hidden="true"></i>
-            <span class="price__title">Minibus</span>
-            <span class="price__passengers">1-8 PASSENGERS</span>
-            <p class="price__info">Our standard cab service will pick you up from your desired location with up to 2 additional riders, and deliver you safely to your target destination.</p>
-            <span class="price__ride">RIDES COST</span>
-            <span class="price__km">$2<span>/km</span></span>
-          </div>
-          <div class="price-item">
-            <i class="fa fa-subway" aria-hidden="true"></i>
-            <span class="price__title">Executive</span>
-            <span class="price__passengers">1-2 PASSENGERS</span>
-            <p class="price__info">Our standard cab service will pick you up from your desired location with up to 2 additional riders, and deliver you safely to your target destination.</p>
-            <span class="price__ride">RIDES COST</span>
-            <span class="price__km">$5<span>/km</span></span>
-          </div>
+      <div class="booking__row">
+        <div class="booking-box">
+          <h2 class="booking-box__title">Booking Form</h2>
+          <form class="online-form online-form_booking" action="#">
+            <div class="online-form__container">
+              <div class="online-form__box">
+                <div class="form-item">
+                  <label class="online-form__label" for="pick-location">Pick Up Location</label>
+                  <input class="online-form__input" type="text" name="pick-location" id="pick-location">
+                </div>
+                <div class="form-item">
+                  <label class="online-form__label" for="date-required">Date Required</label>
+                  <input class="online-form__input" type="text" name="date-required" id="date-required">
+                </div>
+                <div class="form-item">
+                  <label class="online-form__label" for="your-name">Your Name</label>
+                  <input class="online-form__input" type="text" name="your-name" id="your-name">
+                </div>
+                <p class="form-item__info">Payment for bookings is taken in advance as per our terms and conditions</p>
+              </div>
+              <div class="online-form__box">
+                <div class="form-item">
+                  <label class="online-form__label" for="drop-off">Drop Off Location</label>
+                  <input class="online-form__input" type="text" name="drop-off" id="drop-off">
+                </div>
+                <div class="form-item">
+                  <label class="online-form__label" for="passengers">Number of Passengers</label>
+                  <input class="online-form__input" type="text" name="passengers" id="passengers">
+                </div>
+                <div class="form-item">
+                  <label class="online-form__label" for="email-address">Your Email Address</label>
+                  <input class="online-form__input" type="email" name="email-address" id="email-address">
+                </div>
+                <input class="form-btn btn" type="submit" value="GET A QUOTE">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="online-save online-save_booking">
+          <span class="online-save__book">Book online now &amp;</span>
+          <span class="online-save__save">SAVE</span>
+          <span class="online-save__per">10%</span>
+          <span class="online-save__on">On Your Ride</span>
         </div>
       </div>
     </div>
@@ -124,32 +138,45 @@
         <span class="happy-number__passengeer">30,000</span>
       </div>
       <p class="happy-info">customers since we started</p>
-    </div>
-  </section>
-  <section class="about">
-    <div class="container">
-      <h2 class="about__title">About Our Taxis</h2>
-      <img class="about__pic" src="img/avada-taxi.jpg" alt="">
-      <div class="about__row">
-        <div class="about-box">
-          <i class="fa fa-diamond about-box__icon" aria-hidden="true"></i>
-          <h3 class="about-box__title">Always Fresh & Clean</h3>
-          <p class="about-box__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta pharetra finibus. Nunc nisi arcu, convallis quis dapibus vulputate, maximus eget lacus. Aenean ornare diam eu justo sodales, a feugiat est condimentum. Praesent congue, nunc ut auctor consectetur, elit urna dapibus sapien, a eleifend nisl lacus et libero.</p>
-        </div>
-        <div class="about-box">
-          <i class="fa fa-clock-o about-box__icon" aria-hidden="true"></i>
-          <h3 class="about-box__title">Always On Time</h3>
-          <p class="about-box__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta pharetra finibus. Nunc nisi arcu, convallis quis dapibus vulputate, maximus eget lacus. Aenean ornare diam eu justo sodales, a feugiat est condimentum. Praesent congue, nunc ut auctor consectetur, elit urna dapibus sapien, a eleifend nisl lacus et libero.</p>
-        </div>
-        <div class="about-box">
-          <i class="fa fa-cogs about-box__icon" aria-hidden="true"></i>
-          <h3 class="about-box__title">Regularly Serviced</h3>
-          <p class="about-box__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta pharetra finibus. Nunc nisi arcu, convallis quis dapibus vulputate, maximus eget lacus. Aenean ornare diam eu justo sodales, a feugiat est condimentum. Praesent congue, nunc ut auctor consectetur, elit urna dapibus sapien, a eleifend nisl lacus et libero.</p>
-        </div>
-        <div class="about-box">
-          <i class="fa fa-child about-box__icon" aria-hidden="true"></i>
-          <h3 class="about-box__title">Child Friendly</h3>
-          <p class="about-box__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta pharetra finibus. Nunc nisi arcu, convallis quis dapibus vulputate, maximus eget lacus. Aenean ornare diam eu justo sodales, a feugiat est condimentum. Praesent congue, nunc ut auctor consectetur, elit urna dapibus sapien, a eleifend nisl lacus et libero.</p>
+      <div class="say">
+        <h2 class="say__title">What Our Customers Say</h2>
+        <div class="say__row">
+          <div class="say-box">
+            <div class="what-say what-say_mod">
+              <div class="what-say-img">
+                <img class="what-say__img" src="img/testimonial-1.png" alt="testimonial">
+              </div>
+              <div class="what-info">
+                <p class="what-info__testimonial">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                <span class="what-info__author">Mike Smith – </span>
+                <span class="what-info__geo">Brooklyn, NY</span>
+              </div>
+            </div>
+          </div>
+          <div class="say-box">
+            <div class="what-say what-say_mod">
+              <div class="what-say-img">
+                <img class="what-say__img" src="img/testimonial-2.png" alt="testimonial">
+              </div>
+              <div class="what-info">
+                <p class="what-info__testimonial">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                <span class="what-info__author">Kylie Jenson – </span>
+                <span class="what-info__geo">Brooklyn, NY</span>
+              </div>
+            </div>
+          </div>
+          <div class="say-box">
+            <div class="what-say what-say_mod">
+              <div class="what-say-img">
+                <img class="what-say__img" src="img/testimonial-1.png" alt="testimonial">
+              </div>
+              <div class="what-info">
+                <p class="what-info__testimonial">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p>
+                <span class="what-info__author">Mike Smith – </span>
+                <span class="what-info__geo">Brooklyn, NY</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
